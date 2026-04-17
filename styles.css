@@ -180,3 +180,56 @@ nav {
   margin-bottom: 0.9rem;
   line-height: 1.5;
 }
+.skills-section {
+  background: #f8fafc;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanco);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.skills-table thead {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.skills-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.skills-box {
+  flex: 1;
+  background: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.skills-box h3 {
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
+}
+
+.skills-box ul,
+.skills-box ol {
+  padding-left: 1.3rem;
+}
+
+.skills-box li {
+  margin-bottom: 0.8rem;
+  color: #374151;
+}
