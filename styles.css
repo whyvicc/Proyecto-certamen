@@ -102,8 +102,25 @@ nav {
     flex-direction: column;
   }
 
+  @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-container {
+  flex-direction: column;
+}
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
   .section {
     padding: 3rem 1.2rem;
+  }
+  .skills-cards {
+    flex-direction: column;
   }
 }
 
@@ -232,4 +249,127 @@ nav {
 .skills-box li {
   margin-bottom: 0.8rem;
   color: #374151;
+}
+.projects-section {
+  background: #f3f5f8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--blanco);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card figcaption {
+  font-weight: 700;
+  color: var(--azul-oscuro);
+  padding: 0.8rem 1rem 0;
+}
+
+.project-card p {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.project-card a {
+  display: inline-block;
+  padding: 0 1rem 1rem;
+  color: var(--azul-claro);
+  font-weight: 600;
+}
+
+.projects-extra {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #eef2ff;
+  border-left: 4px solid var(--azul-claro);
+  border-radius: 8px;
+}
+.contact-section {
+  background: #f8fafc;
+}
+
+.contact-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 0.9rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--azul-claro);
+}
+
+.contact-form button {
+  margin-top: 0.5rem;
+  padding: 0.9rem;
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0f1b2f;
+}
+
+.contact-info {
+  flex: 1;
+  background: var(--blanco);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--blanco);
+  text-decoration: none;
 }
